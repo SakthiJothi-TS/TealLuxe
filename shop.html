@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TealLuxe</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/shop.css">
+  <link rel="shortcut icon" href="./Src/Image/logo_solostride.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!--header start-->
+
+  <header>
+    <nav class="navbar">
+      <div class="logo_img">
+        <a href="./index.html"><img src="./src/images/Js_logo.png" alt="logo_img"></a>
+        <h4 class="logo">TealLuxe</h4>
+      </div>
+
+      <input type="checkbox" id="nav-btn">
+
+      <label for="nav-btn" class="nav-icon">
+        <i class="bi bi-list open-icon"></i>
+        <i class="bi bi-x close-icon"></i>
+      </label>
+
+      <ul class="nav-links">
+        <li><a class="blink" href="./index.html">Home</a></li>
+        <li><a class="active" href="#">Shop</a></li>
+        <li><a class="blink" href="#">About Us</a></li>
+        <li><a class="blink" href="#">Offers</a></li>
+        <li><a class="blink" href="./contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="search-cart">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder=" " autocomplete="off">
+          <button><i class="bi bi-search"></i></button>
+        </div>
+        <a href="#"><i class="bi bi-heart"></i></a>
+        <a href="#"><i class="bi bi-cart3"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!--header ends-->
+
+  <!--category section starts-->
+
+  <section id="product-circle-section">
+    <div class="circle-column">
+
+      <div class="circle-item">
+        <div class="circle"><img src="./src/images/underarm_cream.png" alt="Under Arm Creams"></div>
+        <p>Under Arm <br> Creams</p>
+      </div>
+
+      <div class="circle-item">
+        <div class="circle"><img src="./src/images/face_makeup.png" alt="Face Makeup Combo"></div>
+        <p>Face <br> Makeup</p>
+      </div>
+
+      <div class="circle-item">
+        <div class="circle"><img src="./src/images/body_lotion.png" alt="Body Lotions & Creams"></div>
+        <p>Body <br> Lotions </p>
+      </div>
+
+      <div class="circle-item">
+        <div class="circle">
+          <div class="text-circle">Under ₹ 99</div>
+        </div>
+        <p>Under <br> ₹99</p>
+      </div>
+
+        <div class="circle-item">
+          <div class="circle"><img src="./src/images/makeup_combo.png" alt="Makeup Combo"></div>
+          <p>Makeup <br> Combo</p>
+        </div>
+
+        <div class="circle-item">
+          <div class="circle star-circle">⭐</div>
+          <p>Top <br> Rated</p>
+        </div>
+
+        <div class="circle-item">
+          <div class="circle"><img src="./src/images/face_wash.png" alt="Face Wash"></div>
+          <p>Face <br> Wash</p>
+        </div>
+
+        <div class="circle-item">
+          <div class="circle"><img src="./src/images/makeup_kit.png" alt="Makeup Kits"></div>
+          <p>Makeup <br>Kits</p>
+        </div>
+  </section> 
+
+  <!--category section ends-->
+
+
+
+
+
+
+  <!--filter section starts-->
+  <!-- <div class="filter-section">
+    <h3>Filter Products</h3>
+
+    <div  iv class="filter-group">
+      <strong>Skin Type</strong>
+      <label><input type="checkbox" class="skin-type" value="Normal"> Normal</label>
+      <label><input type="checkbox" class="skin-type" value="Oily"> Oily</label>
+      <label><input type="checkbox" class="skin-type" value="Dry"> Dry</label>
+    </div>
+
+    <div class="filter-group">
+      <strong>Price Range</strong>
+      <input type="range" min="100" max="1000" step="50" value="1000" class="range-input" id="priceRange">
+      <p>Up to ₹<span id="priceValue">1000</span></p>
+    </div>
+
+    <div class="filter-group">
+      <strong>Product Type</strong>
+      <label><input type="checkbox" class="skin-type" value="Normal"> Cleanser</label>
+      <label><input type="checkbox" class="skin-type" value="Oily"> Toner</label>
+      <label><input type="checkbox" class="skin-type" value="Dry"> Serums</label>
+    </div>
+
+<div class="filter-group">
+  <h3>Makeup Type</h3>
+  <label><input type="checkbox" class="filter-checkbox" value="Brown"> <span class="color brown"></span> Brown</label>
+  <label><input type="checkbox" class="filter-checkbox" value="Rose Gold"> <span class="color rosegold"></span> Rose Gold</label>
+  <label><input type="checkbox" class="filter-checkbox" value="Pink"> <span class="color pink"></span> Pink</label>
+  <label><input type="checkbox" class="filter-checkbox" value="Coral"> <span class="color coral"></span> Coral</label>
+  <label><input type="checkbox" class="filter-checkbox" value="Red"> <span class="color red"></span> Red</label>
+</div>
+
+ <div class="filter-group apply-buttons">
+      <button class="apply" onclick="applyFilters()">Apply</button>
+      <button class="reset" onclick="resetFilters()">Reset</button>
+    </div>
+    
+  </div> -->
+  <!-- <div class="filter-section">
+
+      <h3>Filter Products</h3>
+
+
+      <div class="filter-group">
+        <strong>Skin Type</strong>
+        <label><input type="checkbox" class="skin-type" value="Normal"> Normal</label>
+        <label><input type="checkbox" class="skin-type" value="Oily"> Oily</label>
+        <label><input type="checkbox" class="skin-type" value="Dry"> Dry</label>
+      </div>
+
+      <div class="filter-group">
+        <strong>Price Range</strong>
+        <input type="range" min="100" max="1000" step="50" value="1000" class="range-input" id="priceRange">
+        <p>Up to ₹<span id="priceValue">1000</span></p>
+      </div>
+
+      <div class="filter-group dropdown">
+        <div class="dropdown-header">Makeup Type</div>
+        <div class="dropdown-content">
+          <label><input type="checkbox" class="filter-input" data-type="makeup" value="Eyes"> Eyes</label>
+          <label><input type="checkbox" class="filter-input" data-type="makeup" value="Face"> Face</label>
+          <label><input type="checkbox" class="filter-input" data-type="makeup" value="Nails"> Nails</label>
+          <label><input type="checkbox" class="filter-input" data-type="makeup" value="Lips"> Lips</label>
+        </div>
+      </div>
+
+      <div class="filter-group dropdown">
+        <div class="dropdown-header">Lipstick Colors</div>
+        <div class="dropdown-content">
+          <label><input type="checkbox" class="filter-input" data-type="color" value="Red"> <span
+              class="color red"></span> Red</label>
+          <label><input type="checkbox" class="filter-input" data-type="color" value="Pink"> <span
+              class="color pink"></span> Pink</label>
+          <label><input type="checkbox" class="filter-input" data-type="color" value="Brown"> <span
+              class="color brown"></span> Brown</label>
+          <label><input type="checkbox" class="filter-input" value="Rose Gold"> <span class="color rosegold"></span>
+            Rose Gold</label>
+          <label><input type="checkbox" class="filter-input" value="Coral"> <span class="color coral"></span>
+            Coral</label>
+        </div>
+      </div>
+
+      <div class="filter-group apply-buttons">
+        <button class="apply" onclick="applyFilters()">Apply</button>
+        <button class="reset" onclick="resetFilters()">Reset</button>
+      </div>
+
+    </div> -->
+  <!-- <section id="productList"> -->
+  <!-- <div class="products">
+      <div class="product" data-skin="Normal" data-makeup="Lips" data-color="Red">
+        <div class="card">
+          <img src="./src/images/shop_card_9.png" alt="Face Wash">
+          <h3>Red lipbom</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Oily" data-makeup="Face" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_10.png" alt="Face Wash">
+          <h3>Pink Foundation</h3>
+          <p> Skin Type: Oily</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Brown">
+        <div class="card">
+          <img src="./src/images/shop_card_11.png" alt="Face Wash">
+          <h3>Brown Lipstick</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Normal" data-makeup="Nails" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_12.png" alt="Face Wash">
+          <h3>Pink Nail Polish</h3>
+          <p> Nail Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Normal" data-makeup="Lips" data-color="Red">
+        <div class="card">
+          <img src="./src/images/shop_card_9.png" alt="Face Wash">
+          <h3>Red lipbom</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Oily" data-makeup="Face" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_10.png" alt="Face Wash">
+          <h3>Pink Foundation</h3>
+          <p> Skin Type: Oily</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Brown">
+        <div class="card">
+          <img src="./src/images/shop_card_11.png" alt="Face Wash">
+          <h3>Brown Lipstick</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Normal" data-makeup="Nails" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_12.png" alt="Face Wash">
+          <h3>Pink Nail Polish</h3>
+          <p> Nail Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="299" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_1.png" alt="Face Wash">
+          <h3>Face Wash</h3>
+          <p>Skin Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="450" data-skin="Oily">
+        <div class="card">
+          <img src="./src/images/shop_card_2.png" alt="Moisturizer">
+          <h3>Moisturizer</h3>
+          <p>Skin Type: Oily</p>
+          <span class="price">₹450</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="150" data-skin="Dry">
+        <div class="card">
+          <img src="./src/images/shop_card_3.png" alt="Cleanser">
+          <h3>Cleanser</h3>
+          <p>Skin Type: Dry</p>
+          <span class="price">₹150</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_4.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_5.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_6.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_7.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_8.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="299" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_1.png" alt="Face Wash">
+          <h3>Face Wash</h3>
+          <p>Skin Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="450" data-skin="Oily">
+        <div class="card">
+          <img src="./src/images/shop_card_2.png" alt="Moisturizer">
+          <h3>Moisturizer</h3>
+          <p>Skin Type: Oily</p>
+          <span class="price">₹450</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="150" data-skin="Dry">
+        <div class="card">
+          <img src="./src/images/shop_card_3.png" alt="Cleanser">
+          <h3>Cleanser</h3>
+          <p>Skin Type: Dry</p>
+          <span class="price">₹150</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_4.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_5.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_6.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_7.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_8.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+  <!--filter section start-->
+
+
+  <!-- <section id="banner">
+    <div class="wrapper">
+      <div class="banner_content">
+
+        <h3>Filter Products</h3>
+
+        <div iv class="filter-group">
+          <strong>Skin Type</strong><br>
+          <label><input type="checkbox" class="skin-type" value="Normal"> Normal</label><br>
+          <label><input type="checkbox" class="skin-type" value="Oily"> Oily</label><br>
+          <label><input type="checkbox" class="skin-type" value="Dry"> Dry</label><br>
+        </div>
+
+        <div class="filter-group">
+          <strong>Price Range</strong>
+          <input type="range" min="100" max="1000" step="50" value="1000" class="range-input" id="priceRange">
+          <p>Up to ₹<span id="priceValue">1000</span></p>
+        </div>
+
+        <div class="filter-group">
+          <strong>Product Type</strong><br>
+          <label><input type="checkbox" class="skin-type" value="Normal"> Cleanser</label><br>
+          <label><input type="checkbox" class="skin-type" value="Oily"> Toner</label><br>
+          <label><input type="checkbox" class="skin-type" value="Dry"> Serums</label><br>
+        </div>
+
+        <div class="filter-group">
+          <strong>Makeup Type</strong><br>
+          <label><input type="checkbox" class="filter-input" data-type="makeup" value="Eyes"> Eyes</label>
+          <label><input type="checkbox" class="filter-input" data-type="makeup" value="Face"> Face</label>
+          <label><input type="checkbox" class="filter-input" data-type="makeup" value="Nails"> Nails</label>
+          <label><input type="checkbox" class="filter-input" data-type="makeup" value="Lips"> Lips</label>
+        </div>
+      
+
+        <div class="filter-group">
+          <h2>Makeup Type</h2><br>
+          <label><input type="checkbox" class="filter-checkbox" value="Brown"> <span class="color brown"></span>
+            Brown</label><br>
+          <label><input type="checkbox" class="filter-checkbox" value="Rose Gold"> <span class="color rosegold"></span>
+            Rose Gold</label><br>
+          <label><input type="checkbox" class="filter-checkbox" value="Pink"> <span class="color pink"></span>
+            Pink</label><br>
+          <label><input type="checkbox" class="filter-checkbox" value="Coral"> <span class="color coral"></span>
+            Coral</label><br>
+          <label><input type="checkbox" class="filter-checkbox" value="Red"> <span class="color red"></span> Red</label>
+        </div>
+
+        <div class="filter-group apply-buttons">
+          <button class="apply" onclick="applyFilters()">Apply</button>
+          <button class="reset" onclick="resetFilters()">Reset</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="banner_img">
+
+      <div class="products">
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Red">
+        <div class="card">
+          <img src="./src/images/shop_card_9.png" alt="Face Wash">
+          <h3>Red lipbom</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Oily" data-makeup="Face" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_10.png" alt="Face Wash">
+          <h3>Pink Foundation</h3>
+          <p> Skin Type: Oily</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Brown">
+        <div class="card">
+          <img src="./src/images/shop_card_11.png" alt="Face Wash">
+          <h3>Brown Lipstick</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Normal" data-makeup="Nails" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_12.png" alt="Face Wash">
+          <h3>Pink Nail Polish</h3>
+          <p> Nail Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Red">
+        <div class="card">
+          <img src="./src/images/shop_card_9.png" alt="Face Wash">
+          <h3>Red lipbom</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Oily" data-makeup="Face" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_10.png" alt="Face Wash">
+          <h3>Pink Foundation</h3>
+          <p> Skin Type: Oily</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Brown">
+        <div class="card">
+          <img src="./src/images/shop_card_11.png" alt="Face Wash">
+          <h3>Brown Lipstick</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Normal" data-makeup="Nails" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_12.png" alt="Face Wash">
+          <h3>Pink Nail Polish</h3>
+          <p> Nail Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="299" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_1.png" alt="Face Wash">
+          <h3>Face Wash</h3>
+          <p>Skin Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="450" data-skin="Oily">
+        <div class="card">
+          <img src="./src/images/shop_card_2.png" alt="Moisturizer">
+          <h3>Moisturizer</h3>
+          <p>Skin Type: Oily</p>
+          <span class="price">₹450</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="150" data-skin="Dry">
+        <div class="card">
+          <img src="./src/images/shop_card_3.png" alt="Cleanser">
+          <h3>Cleanser</h3>
+          <p>Skin Type: Dry</p>
+          <span class="price">₹150</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_4.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_5.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_6.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_7.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_8.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="299" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_1.png" alt="Face Wash">
+          <h3>Face Wash</h3>
+          <p>Skin Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="450" data-skin="Oily">
+        <div class="card">
+          <img src="./src/images/shop_card_2.png" alt="Moisturizer">
+          <h3>Moisturizer</h3>
+          <p>Skin Type: Oily</p>
+          <span class="price">₹450</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+        <div class="product" data-price="450" data-skin="Oily">
+        <div class="card">
+          <img src="./src/images/shop_card_2.png" alt="Moisturizer">
+          <h3>Moisturizer</h3>
+          <p>Skin Type: Oily</p>
+          <span class="price">₹450</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="150" data-skin="Dry">
+        <div class="card">
+          <img src="./src/images/shop_card_3.png" alt="Cleanser">
+          <h3>Cleanser</h3>
+          <p>Skin Type: Dry</p>
+          <span class="price">₹150</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_4.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_5.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_6.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_7.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_8.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+  </section> -->
+
+
+
+<section id="banner">
+  <div class="wrapper">
+    <div class="banner_content">
+      <h3>Filter Products</h3>
+
+      <div class="filter-group">
+        <p><strong>Skin Type</strong></p>
+        <label><input type="checkbox" class="skin-type" value="Normal"> Normal</label><br>
+        <label><input type="checkbox" class="skin-type" value="Oily"> Oily</label><br>
+        <label><input type="checkbox" class="skin-type" value="Dry"> Dry</label><br>
+      </div>
+
+      <div class="filter-group">
+        <a><strong>Price Range</strong></a>
+        <input type="range" min="100" max="1000" step="50" value="1000" class="range-input" id="priceRange">
+        <p>Up to ₹<span id="priceValue">1000</span></p>
+      </div>
+
+      <div class="filter-group">
+        <a><strong>Product Type</strong></a><br>
+        <label><input type="checkbox" class="skin-type" value="Normal"> Cleanser</label><br>
+        <label><input type="checkbox" class="skin-type" value="Oily"> Toner</label><br>
+        <label><input type="checkbox" class="skin-type" value="Dry"> Serums</label><br>
+      </div>
+
+      <div class="filter-group">
+        <a><strong>Makeup Type</strong></a><br>
+        <label><input type="checkbox" class="filter-input" data-type="makeup" value="Eyes"> Eyes</label><br>
+        <label><input type="checkbox" class="filter-input" data-type="makeup" value="Face"> Face</label><br>
+        <label><input type="checkbox" class="filter-input" data-type="makeup" value="Nails"> Nails</label><br>
+        <label><input type="checkbox" class="filter-input" data-type="makeup" value="Lips"> Lips</label><br>
+      </div>
+
+      <div class="filter-group">
+        <a><strong>Makeup Color</strong></a><br>
+        <label><input type="checkbox" class="filter-checkbox" value="Brown"> <span class="color brown"></span> Brown</label><br>
+        <label><input type="checkbox" class="filter-checkbox" value="Rose Gold"> <span class="color rosegold"></span> Rose Gold</label><br>
+        <label><input type="checkbox" class="filter-checkbox" value="Pink"> <span class="color pink"></span> Pink</label><br>
+        <label><input type="checkbox" class="filter-checkbox" value="Coral"> <span class="color coral"></span> Coral</label><br>
+        <label><input type="checkbox" class="filter-checkbox" value="Red"> <span class="color red"></span> Red</label>
+      </div>
+
+      <div class="filter-group apply-buttons">
+        <button class="apply" onclick="applyFilters()">Apply</button>
+        <button class="reset" onclick="resetFilters()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner_img">
+    <div class="products">
+    
+<div class="product" data-skin="Dry" data-makeup="Lips" data-color="Red">
+        <div class="card">
+          <img src="./src/images/shop_card_9.png" alt="Face Wash">
+          <h3>Red lipbom</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Oily" data-makeup="Face" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_10.png" alt="Face Wash">
+          <h3>Pink Foundation</h3>
+          <p> Skin Type: Oily</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Brown">
+        <div class="card">
+          <img src="./src/images/shop_card_11.png" alt="Face Wash">
+          <h3>Brown Lipstick</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Normal" data-makeup="Nails" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_12.png" alt="Face Wash">
+          <h3>Pink Nail Polish</h3>
+          <p> Nail Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Red">
+        <div class="card">
+          <img src="./src/images/shop_card_9.png" alt="Face Wash">
+          <h3>Red lipbom</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Oily" data-makeup="Face" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_10.png" alt="Face Wash">
+          <h3>Pink Foundation</h3>
+          <p> Skin Type: Oily</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Dry" data-makeup="Lips" data-color="Brown">
+        <div class="card">
+          <img src="./src/images/shop_card_11.png" alt="Face Wash">
+          <h3>Brown Lipstick</h3>
+          <p> Skin Type: Dry Skin</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-skin="Normal" data-makeup="Nails" data-color="Pink">
+        <div class="card">
+          <img src="./src/images/shop_card_12.png" alt="Face Wash">
+          <h3>Pink Nail Polish</h3>
+          <p> Nail Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="299" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_1.png" alt="Face Wash">
+          <h3>Face Wash</h3>
+          <p>Skin Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="450" data-skin="Oily">
+        <div class="card">
+          <img src="./src/images/shop_card_2.png" alt="Moisturizer">
+          <h3>Moisturizer</h3>
+          <p>Skin Type: Oily</p>
+          <span class="price">₹450</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="150" data-skin="Dry">
+        <div class="card">
+          <img src="./src/images/shop_card_3.png" alt="Cleanser">
+          <h3>Cleanser</h3>
+          <p>Skin Type: Dry</p>
+          <span class="price">₹150</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_4.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_5.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_6.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_7.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_8.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="299" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_1.png" alt="Face Wash">
+          <h3>Face Wash</h3>
+          <p>Skin Type: Normal</p>
+          <span>₹299</span>
+          <button>Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="450" data-skin="Oily">
+        <div class="card">
+          <img src="./src/images/shop_card_2.png" alt="Moisturizer">
+          <h3>Moisturizer</h3>
+          <p>Skin Type: Oily</p>
+          <span class="price">₹450</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+        <div class="product" data-price="450" data-skin="Oily">
+        <div class="card">
+          <img src="./src/images/shop_card_2.png" alt="Moisturizer">
+          <h3>Moisturizer</h3>
+          <p>Skin Type: Oily</p>
+          <span class="price">₹450</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="150" data-skin="Dry">
+        <div class="card">
+          <img src="./src/images/shop_card_3.png" alt="Cleanser">
+          <h3>Cleanser</h3>
+          <p>Skin Type: Dry</p>
+          <span class="price">₹150</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_4.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_5.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_6.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_7.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+
+      <div class="product" data-price="600" data-skin="Normal">
+        <div class="card">
+          <img src="./src/images/shop_card_8.png" alt="Sunscreen">
+          <h3>Sunscreen</h3>
+          <p>Skin Type: Normal</p>
+          <span class="price">₹600</span>
+          <button class="quick-view">Quick View</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>TealLuxe</h3>
+      <p>Your trusted partner in skincare excellence.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./index.html#story-sec">About Us</a></li>
+        <li><a href="./index.html#skincare-tips-section">Skincare Tips</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Connect</h3>
+      <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"  target="_blank" ><i class="bi bi-envelope-fill"></i></a> tealluxe@gmail.com</p>  
+      <p><a href="tel:+6380070672"><i class="bi bi-telephone-fill"></i></a> +91-63789-73467</p>       
+      <div class="social-icons">
+        <span><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></span>  
+        <span><a href="https://www.facebook.com/login/" target="_blank"><i class="bi bi-facebook"></i></a></span>  
+        <span><a href="https://www.youtube.com/account" target="_blank"><i class="bi bi-youtube"></i></a></span>    
+        <span><a href="https://in.pinterest.com/" target="_blank"><i class="bi bi-pinterest"></i></a></span>  
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Newsletter</h3>
+      <div class="newsletter">
+<form>
+  <input type="email" placeholder="Enter your email" required>
+  <button type="submit">Subscribe</button>
+</form>
+      </div>
+      <a href="https://play.google.com/store/games?device=windows&amp;pli=1" target="_blank"><img src="./src/images/google_play.png" alt="Google Play" class="store-badge"></a>
+      <a href="https://appstoreconnect.apple.com/login" target="_blank"><img src="./src/images/app_store.png" alt="App Store" class="store-badge"></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p><a href="#">&copy; 2025 TealLuxe Beauty. All rights reserved.</a></p>
+    <p><a href="#">Terms & Service</a> | <a href="#">Privacy Policy</a></p>
+    <p>Design & Developed by <a href="https://www.behance.net/sakthijothi" target="_blank">Sakthi Jothi</a></p>
+  </div>
+</footer>
+
+
+  <!--filter section ends-->
+
+
+  <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>
