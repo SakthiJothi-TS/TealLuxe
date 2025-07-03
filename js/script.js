@@ -127,41 +127,47 @@ typeNextSuggestion();
   //form validation 
 
 
-  // let form = document.querySelector('.form-box');
+  document.querySelector('.form-box').addEventListener('submit', function (e) {
+    e.preventDefault(); // Stop form submit
 
-  // form.onsubmit = function (e) {
-  //   e.preventDefault();
+    // Remove all old error messages
+    const oldErrors = document.querySelectorAll('.error-msg');
+    oldErrors.forEach(err => err.remove());
 
-  //   let name = form.querySelector('input[type="text"]').value;
-  //   let email = form.querySelector('input[type="email"]').value;
-  //   let message = form.querySelector('textarea').value;
+    const nameInput = this.querySelector('input[type="text"]');
+    const emailInput = this.querySelector('input[type="email"]');
+    const messageInput = this.querySelector('textarea');
+    let isValid = true;
 
-  //   if (name === '' || email === '' || message === '') {
-  //     alert("All fields are required.");
-  //     return;
-  //   }
+    if (nameInput.value.trim() === '') {
+      showError(nameInput, "All Fields are required");
+      isValid = false;
+    }
 
-  //   if (!email.includes('@') || !email.includes('.')) {
-  //     alert("Enter a valid email.");
-  //     return;
-  //   }
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!emailPattern.test(emailInput.value.trim())) {
+      showError(emailInput, "All Fields are required");
+      isValid = false;
+    }
 
-  //   alert("Form submitted successfully!");
-  //   form.reset();
-  // };
+    if (messageInput.value.trim() === '') {
+      showError(messageInput, "All Fields are required");
+      isValid = false;
+    }
 
+    if (isValid) {
+      // Optionally show success message here or allow submit
+      this.submit(); // Submit form if all valid
+    }
+  });
 
-  // function toggleFilter() {
-  //   const overlay = document.getElementById('filterOverlay');
-  //   overlay.classList.toggle('show');
-  // }
-
-  // // Optional: update price range live
-  // const priceInput = document.getElementById("priceRange");
-  // const priceValue = document.getElementById("priceValue");
-  // if (priceInput) {
-  //   priceInput.oninput = function () {
-  //     priceValue.innerText = priceInput.value;
-  //   };
-  // }
+  function showError(inputElement, message) {
+    const error = document.createElement('div');
+    error.className = 'error-msg';
+    error.style.color = 'red';
+    error.style.fontSize = '14px';
+    error.style.marginTop = '4px';
+    error.textContent = message;
+    inputElement.insertAdjacentElement('afterend', error);
+  }
 

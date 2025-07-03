@@ -313,25 +313,41 @@ i{
 }
 
 .form-box {
-  background-color: #d8f3dc;
-  padding: 25px;
+  background-color: var(--secondary-color);
+  padding: 40px 25px;
   border-radius: 10px;
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   border: none;
 }
 
 .form-box label {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
   display: block;
   margin: 10px 0 5px;
   font-size: 20px;
 }
 
-.form-box input,
+.form-box input {
+  width: 96%;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
 .form-box textarea {
   width: 96%;
-  padding: 10px;
+  /* height: 80%; */
+  padding:  45px 10px;
   margin-bottom: 15px;
   border: none;
   border-radius: 5px;
@@ -347,6 +363,7 @@ i{
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  margin-top: 20px;
 }
 
 input:invalid,
@@ -357,6 +374,12 @@ textarea:invalid {
 input:required:valid,
 textarea:required:valid {
   border: 2px solid rgb(85, 85, 85);
+}
+textarea::placeholder {
+  text-align:start;
+}
+textarea {
+  padding-top: 10px; 
 }
 
 
